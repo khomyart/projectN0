@@ -9,7 +9,6 @@
                 margin: 0;
                 list-style: none;
                 text-decoration: none;
-                
             }
 
             body{
@@ -67,29 +66,28 @@
                 color: black;
                 background-color: rgb(209, 209, 209);
                 border-radius: 10px 10px 0 0;
-                box-shadow: 0 0 10px rgb(209, 209, 209) ;
+               
             }
 
             .selection li:active{
                 background-color:rgb(209, 209, 209);
-                box-shadow: 0 0 10px rgb(209, 209, 209);
                 font-size: 21px;
             }
             /*header*/
 
             /*SEARCH BAR*/
-            .image {
+            .searchimage {
                 display: flex;
-                margin: auto;
-                width: 150px;
-                height: 150px;
+                margin: 13px auto 0 ;
+                width: 500px;
+                height: auto;
             }
             .input {
                 display: flex;
                 margin: auto;
                 padding-left: 5px;
                 background-color: white;
-                width: 60%;
+                width: 55%;
                 height: 25px;
                 border: 1px solid grey;
                 border-radius: 10px;
@@ -97,6 +95,8 @@
                 font-size: 17px;
                 color: rgb(71, 71, 71);
                 outline-width: 0px;
+                padding-left: 10px;
+
             }
 
             .input:hover {
@@ -116,7 +116,7 @@
                 <!--HEADER-->
                 <div class="header">
                     <div class="logo">
-                        <a>MAIN<b>MENU</b></a>                    </div>
+                        <a>MAIN<b>MENU</b></a></div>
                     <div class="selection">
                         <ul>
                             <li><a>Home</a></li>
@@ -128,8 +128,8 @@
                 <!--HEADER-->
                 <!--FINDER-->
                     <div>
-                        <img src="/images/LOGO.jpg" class="image">
-                        <input type="text" class="input"> 
+                        <img src="/images/LOGO.png" class="searchimage">
+                        <input type="text" placeholder="Search for the best place to rest..." class="input"> 
                     </div>
                 <!--FINDER-->
                 <!--MAIN PART-->
