@@ -1,9 +1,145 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <style>
+            *{
+                padding: 0px;
+                margin: 0;
+                list-style: none;
+                text-decoration: none;
+                
+            }
 
+            body{
+                background-color: rgb(209, 209, 209);
+            }
+            .grandparent {
+                padding: 0px;
+                display:flex;
+                width: auto;
+                height: auto;
+                justify-content: center;
+            }
+            .parent {
+                border: 3px solid black;
+                width: 700px;
+                flex-direction: column;
+                display: flex;
+            }
+            .child {
+                align-self: center;
+                border: 3px solid green;
+                display: flex;
+                flex-direction: column;
+            }
+            .positions {
+                border: 3px solid red;
+                padding: 0px;
+            }
+            /*header*/
+            .header{
+                color:white;
+                background-color: rgba(0, 0, 0, 0.534);
+                border-radius: 0 0 10px 10px;
+                display:flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                padding: 0 10px;
+            }
+            .logo{
+                text-align: center;
+                width: 100px;
+                border: 2px solid red;
+            }
+            .selection {
+                font-family: Raleway;
+                font-size: 17px;
+                
+            }
+            .selection li{
+                float: left; /*вирівняти список*/
+                height: 35px;
+                line-height: 35px;
+                text-align: center;
+                width: 150px;
+            }
+
+            .selection li:hover{
+                color: black;
+                background-color: rgb(209, 209, 209);
+                border-radius: 10px 10px 0 0;
+                box-shadow: 0 0 20px rgb(209, 209, 209) ;
+            }
+
+            .selection li:active{
+                background-color:rgb(209, 209, 209);
+                box-shadow: 0 0 10px rgb(209, 209, 209);
+                font-size: 21px;
+            }
+            /*header*/
+
+            /*SEARCH BAR*/
+            .input {
+                display: flex;
+                margin: 10px auto;
+                padding-left: 5px;
+                background-color: white;
+                width: 90%;
+                height: 25px;
+                border: 1px solid grey;
+                border-radius: 10px;
+                font-family: arial;
+                font-size: 17px;
+                color: rgb(71, 71, 71);
+                outline-width: 0px;
+            }
+
+            .input:hover {
+                box-shadow: 0 0 5px grey;
+            }
+
+            .input:active, .input.active {
+                box-shadow: 0 0 10px grey;
+            }
+
+            /*SEARCH BAR*/
+
+        </style>
     </head>
     <body>
-        
+        <div class="grandparent">
+            <div class="parent">
+                <!--HEADER-->
+                <div class="header">
+                    <div class="logo">
+                        <b>LOGO</b>
+                    </div>
+                    <div class="selection">
+                        <ul>
+                            <li><a>Home</a></li>
+                            <li><a>Contacts</a></li>
+                            <li><a>About</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!--HEADER-->
+                <div>
+                    <input type="text" class="input"> 
+                </div>
+                <div class="child">
+                    <div class="positions">
+                        <H1>block 1</H1>
+                    </div>
+                    <div class="positions">
+                        <H1>block 2</H1>
+                    </div>
+                    <div class="positions">
+                        <H1>block 3</H1>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
