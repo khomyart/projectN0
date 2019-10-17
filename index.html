@@ -2,6 +2,7 @@
 <html>
     <head>
         <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet"> <!--font-family: 'Nunito Sans', sans-serif;-->
         <meta charset="UTF-8">
         <style>
             *{
@@ -53,7 +54,7 @@
                 flex-wrap: wrap;
                 justify-content: space-between;
                 padding: 0 10px;
-                font-family: Raleway;
+                font-family: 'Nunito Sans', sans-serif;
                 font-size: 17px;
                 z-index: 200;
             }
@@ -66,10 +67,10 @@
                 width: 150px;
                 height: 45px;
                 line-height: 45px;
-
+                
                 display: block;
                 color: white;
-                font-size: 20px;
+                font-size: 22px;
                
             }
 
@@ -83,7 +84,7 @@
             .logo a:active {
                 text-decoration: none;
                 color: black;
-                font-size: 25px;
+                font-size: 18px;
             }
 
 
@@ -93,6 +94,7 @@
                 line-height: 45px;
                 text-align: center;
                 margin: 0 16px;
+                font-size: 22px;
                 
             }
 
@@ -101,6 +103,7 @@
                 display: block;
                 text-decoration: none; 
                 color:rgb(255, 255, 255);
+
                 
             }
 
@@ -113,7 +116,7 @@
 
             .selection li:active{
                 background-color:rgb(209, 209, 209);
-                font-size: 21px;
+                font-size: 18px;
                 color: black;
                 border-radius: 10px 10px 0 0;
             }
@@ -130,16 +133,16 @@
             .input {
                 background-color: rgb(255, 255, 255);
                 width: 100%;
-                height: 35px;
+                height: 45px;
                 border: 1px solid grey;
                 border-radius: 10px 0 0 10px;
                 font-family: arial;
-                font-size: 17px;
+                font-size: 22px;
                 color: rgb(71, 71, 71);
                 outline-width: 0px;
                 padding-left: 10px;
                 margin-left: -5px;
-                line-height: 35px;
+                line-height: 45px;
             }
 
             .input:hover {
@@ -165,7 +168,7 @@
                 justify-content: center;
                 margin: auto;
                 width: 100px;
-                height: 37px;
+                height: 47px;
                 background-color: rgb(108, 140, 245); 
                /* background-color: rgb(255, 255, 255); */
                 outline-width: 0px;
@@ -177,6 +180,10 @@
 
             .searchbutton button img {
                 width: 22px;
+            }
+
+            .searchbutton button img:active {
+                width: 19px;
             }
 
             .searchbutton button:hover {
@@ -212,8 +219,8 @@
                 background-color: rgba(255, 255, 255, 0.822);
                 border-radius: 12px;
                 padding: 10px;
-                height: 300px;
-                margin-bottom: 15px;
+                height: 200px;
+                margin-bottom: 30px;
                 display:flex;
                 flex-direction: row;
             }
@@ -231,19 +238,25 @@
 
             .positioncontainer {
                 display: flex;
-           
                 flex-direction: column;
-                justify-content: center;
+                justify-content:space-between;
+
+            }
+
+            .pheader {
+                padding: 0 0 1px 20px;
+                box-sizing: border-box;
+                font-size: 150%;
+                font-family: 'Nunito Sans', sans-serif;
             }
 
             .ptext {
-               
-                height: 250px;
                 padding: 0 0 10px 20px;
                 box-sizing: border-box;
+                font-family: 'Nunito Sans', sans-serif;
                 font-size: 110%;
                 overflow:auto;
-                margin-bottom: 5px;
+                margin-bottom: 10px;
 
             }
 
@@ -275,11 +288,12 @@
             }
 
             .btn-success:hover {
-                font-size: 20px;
+                box-shadow: 0 0 5px green;
+
             }
 
             .btn-success:active {
-                font-size: 15px;
+                font-size: 13px;
             }
             /*position*/
 
@@ -305,7 +319,7 @@
 
             .pageholder a {
                 color: black;
-                font-family: raleway;
+                font-family: 'Nunito Sans', sans-serif;
                 font-size: 20px;
                 transition: background-color .3s;
                 padding: 10px 20px;
@@ -371,8 +385,11 @@
                             <img src="/aparts/apart2_c.jpg">
                         </div>
                         <div class="positioncontainer">
+                            <div class="pheader">
+                                Incredible place #345
+                            </div>
                             <div class="ptext">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In hac habitasse platea dictumst quisque sagittis. Tempor orci dapibus ultrices in. Sapien faucibus et molestie ac feugiat sed lectus vestibulum. Nulla malesuada pellentesque elit eget. Dui faucibus in ornare quam viverra orci sagittis eu volutpat. Eu mi bibendum neque egestas congue. Donec enim diam vulputate ut pharetra sit. Fermentum iaculis eu non diam phasellus vestibulum. Massa sed elementum tempus egestas sed. Fusce ut placerat orci nulla pellentesque dignissim enim. Sagittis eu volutpat odio facilisis mauris sit amet. Eget nullam non nisi est sit amet. Accumsan sit amet nulla facilisi morbi.</br>
+                                Just a couple of words about this incredible place #345. Here we have a room and some things in it.  </br>
                             </div>
                             <div class="pbutton">
                                 <button class="btn btn-success">Book it!</button>
@@ -386,8 +403,11 @@
                                 <img src="/aparts/apart3_c.jpg">
                             </div>
                             <div class="positioncontainer">
+                                <div class="pheader">
+                                    Incredible place #384
+                                </div>
                                 <div class="ptext">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In hac habitasse platea dictumst quisque sagittis. Tempor orci dapibus ultrices in. Sapien faucibus et molestie ac feugiat sed lectus vestibulum. Nulla malesuada pellentesque elit eget. Dui faucibus in ornare quam viverra orci sagittis eu volutpat. Eu mi bibendum neque egestas congue. Donec enim diam vulputate ut pharetra sit. Fermentum iaculis eu non diam phasellus vestibulum. Massa sed elementum tempus egestas sed. Fusce ut placerat orci nulla pellentesque dignissim enim. Sagittis eu volutpat odio facilisis mauris sit amet. Eget nullam non nisi est sit amet. Accumsan sit amet nulla facilisi morbi.</br>
+                                    Here we have another #incredible room just for 900009$ hrn per hour. Nothing specific: some lights swinging on the ceiling, sofa on da floor, etc</br>
                                 </div>
                                 <div class="pbutton">
                                     <button class="btn btn-success">Book it!</button>
@@ -395,82 +415,97 @@
                             </div>
                             <!--<div class="prating">
                             </div>-->
-                    </div>
-                    <div class="position">
-                            <div class="pimage"><!--зображення кімнати-->
-                                <img src="/aparts/apart2_c.jpg">
-                            </div>
-                            <div class="positioncontainer">
-                                <div class="ptext">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In hac habitasse platea dictumst quisque sagittis. Tempor orci dapibus ultrices in. Sapien faucibus et molestie ac feugiat sed lectus vestibulum. Nulla malesuada pellentesque elit eget. Dui faucibus in ornare quam viverra orci sagittis eu volutpat. Eu mi bibendum neque egestas congue. Donec enim diam vulputate ut pharetra sit. Fermentum iaculis eu non diam phasellus vestibulum. Massa sed elementum tempus egestas sed. Fusce ut placerat orci nulla pellentesque dignissim enim. Sagittis eu volutpat odio facilisis mauris sit amet. Eget nullam non nisi est sit amet. Accumsan sit amet nulla facilisi morbi.</br>
+                        </div>
+                        <div class="position">
+                                <div class="pimage"><!--зображення кімнати-->
+                                    <img src="/aparts/apart4_c.jpg">
                                 </div>
-                                <div class="pbutton">
-                                    <button class="btn btn-success">Book it!</button>
+                                <div class="positioncontainer">
+                                    <div class="pheader">
+                                        Incredible place #697
+                                    </div>
+                                    <div class="ptext">
+                                       Special offere #697 grands you incredible pleasure if u decide to stay there. Premium class house was made just for you and for making you feel better after hard all-day work. Take a sit, turn on TV and get some rest with your new house-friend... ;)))</br>
+                                    </div>
+                                    <div class="pbutton">
+                                        <button class="btn btn-success">Book it!</button>
+                                    </div>
                                 </div>
+                                <!--<div class="prating">
+                                </div>-->
                             </div>
-                            <!--<div class="prating">
-                            </div>-->
-                    </div>
-                    <div class="position">
-                            <div class="pimage"><!--зображення кімнати-->
-                                <img src="/aparts/apart2_c.jpg">
-                            </div>
-                            <div class="positioncontainer">
-                                <div class="ptext">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In hac habitasse platea dictumst quisque sagittis. Tempor orci dapibus ultrices in. Sapien faucibus et molestie ac feugiat sed lectus vestibulum. Nulla malesuada pellentesque elit eget. Dui faucibus in ornare quam viverra orci sagittis eu volutpat. Eu mi bibendum neque egestas congue. Donec enim diam vulputate ut pharetra sit. Fermentum iaculis eu non diam phasellus vestibulum. Massa sed elementum tempus egestas sed. Fusce ut placerat orci nulla pellentesque dignissim enim. Sagittis eu volutpat odio facilisis mauris sit amet. Eget nullam non nisi est sit amet. Accumsan sit amet nulla facilisi morbi.</br>
+                            <div class="position">
+                                    <div class="pimage"><!--зображення кімнати-->
+                                        <img src="/aparts/apart2_c.jpg">
+                                    </div>
+                                    <div class="positioncontainer">
+                                        <div class="pheader">
+                                            Incredible place #345
+                                        </div>
+                                        <div class="ptext">
+                                            Some desctiptiom here. Maybe a little bit weird to see it here but there is no shame in it i belive...</br>
+                                        </div>
+                                        <div class="pbutton">
+                                            <button class="btn btn-success">Book it!</button>
+                                        </div>
+                                    </div>
+                                    <!--<div class="prating">
+                                    </div>-->
                                 </div>
-                                <div class="pbutton">
-                                    <button class="btn btn-success">Book it!</button>
-                                </div>
-                            </div>
-                            <!--<div class="prating">
-                            </div>-->
-                    </div>
-                    <div class="position">
-                            <div class="pimage"><!--зображення кімнати-->
-                                <img src="/aparts/apart3_c.jpg">
-                            </div>
-                            <div class="positioncontainer">
-                                <div class="ptext">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In hac habitasse platea dictumst quisque sagittis. Tempor orci dapibus ultrices in. Sapien faucibus et molestie ac feugiat sed lectus vestibulum. Nulla malesuada pellentesque elit eget. Dui faucibus in ornare quam viverra orci sagittis eu volutpat. Eu mi bibendum neque egestas congue. Donec enim diam vulputate ut pharetra sit. Fermentum iaculis eu non diam phasellus vestibulum. Massa sed elementum tempus egestas sed. Fusce ut placerat orci nulla pellentesque dignissim enim. Sagittis eu volutpat odio facilisis mauris sit amet. Eget nullam non nisi est sit amet. Accumsan sit amet nulla facilisi morbi.</br>
-                                </div>
-                                <div class="pbutton">
-                                    <button class="btn btn-success">Book it!</button>
-                                </div>
-                            </div>
-                            <!--<div class="prating">
-                            </div>-->
-                    </div>
-                    <div class="position">
-                            <div class="pimage"><!--зображення кімнати-->
-                                <img src="/aparts/apart2_c.jpg">
-                            </div>
-                            <div class="positioncontainer">
-                                <div class="ptext">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In hac habitasse platea dictumst quisque sagittis. Tempor orci dapibus ultrices in. Sapien faucibus et molestie ac feugiat sed lectus vestibulum. Nulla malesuada pellentesque elit eget. Dui faucibus in ornare quam viverra orci sagittis eu volutpat. Eu mi bibendum neque egestas congue. Donec enim diam vulputate ut pharetra sit. Fermentum iaculis eu non diam phasellus vestibulum. Massa sed elementum tempus egestas sed. Fusce ut placerat orci nulla pellentesque dignissim enim. Sagittis eu volutpat odio facilisis mauris sit amet. Eget nullam non nisi est sit amet. Accumsan sit amet nulla facilisi morbi.</br>
-                                </div>
-                                <div class="pbutton">
-                                    <button class="btn btn-success">Book it!</button>
-                                </div>
-                            </div>
-                            <!--<div class="prating">
-                            </div>-->
-                    </div>
-                    <div class="position">
-                            <div class="pimage"><!--зображення кімнати-->
-                                <img src="/aparts/apart3_c.jpg">
-                            </div>
-                            <div class="positioncontainer">
-                                <div class="ptext">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In hac habitasse platea dictumst quisque sagittis. Tempor orci dapibus ultrices in. Sapien faucibus et molestie ac feugiat sed lectus vestibulum. Nulla malesuada pellentesque elit eget. Dui faucibus in ornare quam viverra orci sagittis eu volutpat. Eu mi bibendum neque egestas congue. Donec enim diam vulputate ut pharetra sit. Fermentum iaculis eu non diam phasellus vestibulum. Massa sed elementum tempus egestas sed. Fusce ut placerat orci nulla pellentesque dignissim enim. Sagittis eu volutpat odio facilisis mauris sit amet. Eget nullam non nisi est sit amet. Accumsan sit amet nulla facilisi morbi.</br>
-                                </div>
-                                <div class="pbutton">
-                                    <button class="btn btn-success">Book it!</button>
-                                </div>
-                            </div>
-                            <!--<div class="prating">
-                            </div>-->
-                    </div>
+                                <div class="position">
+                                        <div class="pimage"><!--зображення кімнати-->
+                                            <img src="/aparts/apart2_c.jpg">
+                                        </div>
+                                        <div class="positioncontainer">
+                                            <div class="pheader">
+                                                Incredible place #345
+                                            </div>
+                                            <div class="ptext">
+                                                Some desctiptiom here. Maybe a little bit weird to see it here but there is no shame in it i belive...</br>
+                                            </div>
+                                            <div class="pbutton">
+                                                <button class="btn btn-success">Book it!</button>
+                                            </div>
+                                        </div>
+                                        <!--<div class="prating">
+                                        </div>-->
+                                    </div>
+                                    <div class="position">
+                                            <div class="pimage"><!--зображення кімнати-->
+                                                <img src="/aparts/apart2_c.jpg">
+                                            </div>
+                                            <div class="positioncontainer">
+                                                <div class="pheader">
+                                                    Incredible place #345
+                                                </div>
+                                                <div class="ptext">
+                                                    Some desctiptiom here. Maybe a little bit weird to see it here but there is no shame in it i belive...</br>
+                                                </div>
+                                                <div class="pbutton">
+                                                    <button class="btn btn-success">Book it!</button>
+                                                </div>
+                                            </div>
+                                            <!--<div class="prating">
+                                            </div>-->
+                                        </div>
+                                        <div class="position">
+                                                <div class="pimage"><!--зображення кімнати-->
+                                                    <img src="/aparts/apart2_c.jpg">
+                                                </div>
+                                                <div class="positioncontainer">
+                                                    <div class="pheader">
+                                                        Incredible place #345
+                                                    </div>
+                                                    <div class="ptext">
+                                                        Some desctiptiom here. Maybe a little bit weird to see it here but there is no shame in it i belive...</br>
+                                                    </div>
+                                                    <div class="pbutton">
+                                                        <button class="btn btn-success">Book it!</button>
+                                                    </div>
+                                                </div>
+                                                <!--<div class="prating">
+                                                </div>-->
+                                            </div>
                 </div>
                  <!--MAIN PART-->
                 <div class="footer">
