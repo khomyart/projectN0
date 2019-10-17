@@ -22,7 +22,8 @@
                 justify-content: center;
             }
             .parent {
-                width: 1000px;
+               
+                width: 1200px;
                 flex-direction: column;
                 display: flex;
             }
@@ -31,10 +32,13 @@
                 align-self: center;
                 display: flex;
                 flex-direction: column;
-                width:80%;
+                width:85%;
+               
             }
             /*header*/
             .header{
+                position:sticky; 
+                top:0px;
                 color:white;
                 background-color: rgba(0, 0, 0, 0.534);
                 border-radius: 0 0 10px 10px;
@@ -48,12 +52,12 @@
             .logo{
                 text-align: center;
                 width: 180px;
-                line-height: 30px;
+                line-height: 40px;
             }
             .selection li{
                 float: left; /*вирівняти список*/
-                height: 30px;
-                line-height: 30px;
+                height: 40px;
+                line-height: 40px;
                 text-align: center;
                 width: 150px;
             }
@@ -78,13 +82,15 @@
                 width: 500px;
                 height: auto;
             }
+
             .input {
+                
                 display: flex;
                 margin: auto;
                 padding-left: 5px;
                 background-color: white;
                 width: 55%;
-                height: 25px;
+                height: 35px;
                 border: 1px solid grey;
                 border-radius: 10px;
                 font-family: arial;
@@ -102,36 +108,60 @@
             .input:active, .input.active {
                 box-shadow: 0 0 10px grey;
             }
+
+            .searchbox {
+            
+               position:sticky; 
+               top:50px;
+            }
             /*SEARCH BAR*/
 
-            /*POSITIONS*/
-            .positions {
-                background-color: white;
+            /*position*/
+            .position {
+                background-color: rgba(255, 255, 255, 0.822);
+                border-radius: 12px;
+                padding: 10px;
                 height: 200px;
                 margin-bottom: 10px;
+                display:flex;
+                flex-direction: row;
             }
 
-
-            .positions .pimage img {
-
-                float: left;
+            .pimage img {
                 width: 240px;
                 height: 200px;
                 border-radius: 5%;
+                transition:all 0.25s ease;
+            }
+
+            .pimage img:hover {
+                transform: scale(1.1);
+            }
+
+            .positioncontainer {
+                display: flex;
+           
+                flex-direction: column;
+                justify-content: center;
             }
 
             .ptext {
+               
                 height: 155px;
                 padding: 0 0 10px 20px;
-                margin-left: 240px;
                 box-sizing: border-box;
-                font-size: 90%;
+                font-size: 110%;
                 overflow:auto;
+                margin-bottom: 5px;
+
             }
-            
+
             .pbutton {
                display:flex;
-               justify-content: center;
+               justify-content: flex-end;
+                margin: 0 30px 5px 0;
+             
+
             }
 
             .btn {
@@ -155,10 +185,10 @@
                 font-size: 20px;
             }
 
-            .btn-success:active, .btn-success.active {
+            .btn-success:active {
                 font-size: 15px;
             }
-            /*POSITIONS*/
+            /*position*/
 
         </style>
     </head>
@@ -168,7 +198,8 @@
                 <!--HEADER-->
                 <div class="header">
                     <div class="logo">
-                        <a>MAIN<b>MENU</b></a></div>
+                        <a>MAIN<b>MENU</b></a>
+                    </div>
                     <div class="selection">
                         <ul>
                             <li><a>Home</a></li>
@@ -179,73 +210,123 @@
                 </div>
                 <!--HEADER-->
                 <!--FINDER-->
-                    <div>
-                        <img src="/images/LOGO.png" class="searchimage">
-                        <input type="text" placeholder="Search for the best place to rest..." class="input"> 
-                    </div>
+                <div>
+                    <img src="/images/LOGO.png" class="searchimage">
+                </div>
+                <div class="searchbox">
+                    <input type="text" placeholder="Search for the best place to rest..." class="input"> 
+                </div>
                 <!--FINDER-->
                 <!--MAIN PART-->
                 <div class="child">
-                    <div class="positions">
+                    <div class="position">
                         <div class="pimage"><!--зображення кімнати-->
                             <img src="/aparts/apart2_c.jpg">
                         </div>
-                        <div class="ptext">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In hac habitasse platea dictumst quisque sagittis. Tempor orci dapibus ultrices in. Sapien faucibus et molestie ac feugiat sed lectus vestibulum. Nulla malesuada pellentesque elit eget. Dui faucibus in ornare quam viverra orci sagittis eu volutpat. Eu mi bibendum neque egestas congue. Donec enim diam vulputate ut pharetra sit. Fermentum iaculis eu non diam phasellus vestibulum. Massa sed elementum tempus egestas sed. Fusce ut placerat orci nulla pellentesque dignissim enim. Sagittis eu volutpat odio facilisis mauris sit amet. Eget nullam non nisi est sit amet. Accumsan sit amet nulla facilisi morbi.</br>
-                        </div>
-                        <div class="pbutton">
-                            <button class="btn btn-success">Book it!</button>
-                        </div>
-                        <!--<div class="prating">
-
-                        </div>-->
-                    </div>
-                    <div class="positions">
-                            <div class="pimage"><!--зображення кімнати-->
-                                <img src="/aparts/apart2_c.jpg">
-                            </div>
+                        <div class="positioncontainer">
                             <div class="ptext">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In hac habitasse platea dictumst quisque sagittis. Tempor orci dapibus ultrices in. Sapien faucibus et molestie ac feugiat sed lectus vestibulum. Nulla malesuada pellentesque elit eget. Dui faucibus in ornare quam viverra orci sagittis eu volutpat. Eu mi bibendum neque egestas congue. Donec enim diam vulputate ut pharetra sit. Fermentum iaculis eu non diam phasellus vestibulum. Massa sed elementum tempus egestas sed. Fusce ut placerat orci nulla pellentesque dignissim enim. Sagittis eu volutpat odio facilisis mauris sit amet. Eget nullam non nisi est sit amet. Accumsan sit amet nulla facilisi morbi.</br>
                             </div>
                             <div class="pbutton">
                                 <button class="btn btn-success">Book it!</button>
                             </div>
-                            <!--<div class="prating">
-    
-                            </div>-->
                         </div>
-                        <div class="positions">
-                                <div class="pimage"><!--зображення кімнати-->
-                                    <img src="/aparts/apart2_c.jpg">
-                                </div>
+                        <!--<div class="prating">
+                        </div>-->
+                    </div>
+                    <div class="position">
+                            <div class="pimage"><!--зображення кімнати-->
+                                <img src="/aparts/apart3_c.jpg">
+                            </div>
+                            <div class="positioncontainer">
                                 <div class="ptext">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In hac habitasse platea dictumst quisque sagittis. Tempor orci dapibus ultrices in. Sapien faucibus et molestie ac feugiat sed lectus vestibulum. Nulla malesuada pellentesque elit eget. Dui faucibus in ornare quam viverra orci sagittis eu volutpat. Eu mi bibendum neque egestas congue. Donec enim diam vulputate ut pharetra sit. Fermentum iaculis eu non diam phasellus vestibulum. Massa sed elementum tempus egestas sed. Fusce ut placerat orci nulla pellentesque dignissim enim. Sagittis eu volutpat odio facilisis mauris sit amet. Eget nullam non nisi est sit amet. Accumsan sit amet nulla facilisi morbi.</br>
                                 </div>
                                 <div class="pbutton">
                                     <button class="btn btn-success">Book it!</button>
                                 </div>
-                                <!--<div class="prating">
-        
-                                </div>-->
                             </div>
-                            <div class="positions">
-                                    <div class="pimage"><!--зображення кімнати-->
-                                        <img src="/aparts/apart2_c.jpg">
-                                    </div>
-                                    <div class="ptext">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In hac habitasse platea dictumst quisque sagittis. Tempor orci dapibus ultrices in. Sapien faucibus et molestie ac feugiat sed lectus vestibulum. Nulla malesuada pellentesque elit eget. Dui faucibus in ornare quam viverra orci sagittis eu volutpat. Eu mi bibendum neque egestas congue. Donec enim diam vulputate ut pharetra sit. Fermentum iaculis eu non diam phasellus vestibulum. Massa sed elementum tempus egestas sed. Fusce ut placerat orci nulla pellentesque dignissim enim. Sagittis eu volutpat odio facilisis mauris sit amet. Eget nullam non nisi est sit amet. Accumsan sit amet nulla facilisi morbi.</br>
-                                    </div>
-                                    <div class="pbutton">
-                                        <button class="btn btn-success">Book it!</button>
-                                    </div>
-                                    <!--<div class="prating">
-            
-                                    </div>-->
-                                </div>                            
-                    
+                            <!--<div class="prating">
+                            </div>-->
+                    </div>
+                    <div class="position">
+                            <div class="pimage"><!--зображення кімнати-->
+                                <img src="/aparts/apart2_c.jpg">
+                            </div>
+                            <div class="positioncontainer">
+                                <div class="ptext">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In hac habitasse platea dictumst quisque sagittis. Tempor orci dapibus ultrices in. Sapien faucibus et molestie ac feugiat sed lectus vestibulum. Nulla malesuada pellentesque elit eget. Dui faucibus in ornare quam viverra orci sagittis eu volutpat. Eu mi bibendum neque egestas congue. Donec enim diam vulputate ut pharetra sit. Fermentum iaculis eu non diam phasellus vestibulum. Massa sed elementum tempus egestas sed. Fusce ut placerat orci nulla pellentesque dignissim enim. Sagittis eu volutpat odio facilisis mauris sit amet. Eget nullam non nisi est sit amet. Accumsan sit amet nulla facilisi morbi.</br>
+                                </div>
+                                <div class="pbutton">
+                                    <button class="btn btn-success">Book it!</button>
+                                </div>
+                            </div>
+                            <!--<div class="prating">
+                            </div>-->
+                    </div>
+                    <div class="position">
+                            <div class="pimage"><!--зображення кімнати-->
+                                <img src="/aparts/apart2_c.jpg">
+                            </div>
+                            <div class="positioncontainer">
+                                <div class="ptext">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In hac habitasse platea dictumst quisque sagittis. Tempor orci dapibus ultrices in. Sapien faucibus et molestie ac feugiat sed lectus vestibulum. Nulla malesuada pellentesque elit eget. Dui faucibus in ornare quam viverra orci sagittis eu volutpat. Eu mi bibendum neque egestas congue. Donec enim diam vulputate ut pharetra sit. Fermentum iaculis eu non diam phasellus vestibulum. Massa sed elementum tempus egestas sed. Fusce ut placerat orci nulla pellentesque dignissim enim. Sagittis eu volutpat odio facilisis mauris sit amet. Eget nullam non nisi est sit amet. Accumsan sit amet nulla facilisi morbi.</br>
+                                </div>
+                                <div class="pbutton">
+                                    <button class="btn btn-success">Book it!</button>
+                                </div>
+                            </div>
+                            <!--<div class="prating">
+                            </div>-->
+                    </div>
+                    <div class="position">
+                            <div class="pimage"><!--зображення кімнати-->
+                                <img src="/aparts/apart2_c.jpg">
+                            </div>
+                            <div class="positioncontainer">
+                                <div class="ptext">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In hac habitasse platea dictumst quisque sagittis. Tempor orci dapibus ultrices in. Sapien faucibus et molestie ac feugiat sed lectus vestibulum. Nulla malesuada pellentesque elit eget. Dui faucibus in ornare quam viverra orci sagittis eu volutpat. Eu mi bibendum neque egestas congue. Donec enim diam vulputate ut pharetra sit. Fermentum iaculis eu non diam phasellus vestibulum. Massa sed elementum tempus egestas sed. Fusce ut placerat orci nulla pellentesque dignissim enim. Sagittis eu volutpat odio facilisis mauris sit amet. Eget nullam non nisi est sit amet. Accumsan sit amet nulla facilisi morbi.</br>
+                                </div>
+                                <div class="pbutton">
+                                    <button class="btn btn-success">Book it!</button>
+                                </div>
+                            </div>
+                            <!--<div class="prating">
+                            </div>-->
+                    </div>
+                    <div class="position">
+                            <div class="pimage"><!--зображення кімнати-->
+                                <img src="/aparts/apart2_c.jpg">
+                            </div>
+                            <div class="positioncontainer">
+                                <div class="ptext">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In hac habitasse platea dictumst quisque sagittis. Tempor orci dapibus ultrices in. Sapien faucibus et molestie ac feugiat sed lectus vestibulum. Nulla malesuada pellentesque elit eget. Dui faucibus in ornare quam viverra orci sagittis eu volutpat. Eu mi bibendum neque egestas congue. Donec enim diam vulputate ut pharetra sit. Fermentum iaculis eu non diam phasellus vestibulum. Massa sed elementum tempus egestas sed. Fusce ut placerat orci nulla pellentesque dignissim enim. Sagittis eu volutpat odio facilisis mauris sit amet. Eget nullam non nisi est sit amet. Accumsan sit amet nulla facilisi morbi.</br>
+                                </div>
+                                <div class="pbutton">
+                                    <button class="btn btn-success">Book it!</button>
+                                </div>
+                            </div>
+                            <!--<div class="prating">
+                            </div>-->
+                    </div>
+                    <div class="position">
+                            <div class="pimage"><!--зображення кімнати-->
+                                <img src="/aparts/apart2_c.jpg">
+                            </div>
+                            <div class="positioncontainer">
+                                <div class="ptext">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In hac habitasse platea dictumst quisque sagittis. Tempor orci dapibus ultrices in. Sapien faucibus et molestie ac feugiat sed lectus vestibulum. Nulla malesuada pellentesque elit eget. Dui faucibus in ornare quam viverra orci sagittis eu volutpat. Eu mi bibendum neque egestas congue. Donec enim diam vulputate ut pharetra sit. Fermentum iaculis eu non diam phasellus vestibulum. Massa sed elementum tempus egestas sed. Fusce ut placerat orci nulla pellentesque dignissim enim. Sagittis eu volutpat odio facilisis mauris sit amet. Eget nullam non nisi est sit amet. Accumsan sit amet nulla facilisi morbi.</br>
+                                </div>
+                                <div class="pbutton">
+                                    <button class="btn btn-success">Book it!</button>
+                                </div>
+                            </div>
+                            <!--<div class="prating">
+                            </div>-->
+                    </div>
                 </div>
-                <!--MAIN PART-->
             </div>
+                <!--MAIN PART-->
         </div>
     </body>
 </html>
