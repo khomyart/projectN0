@@ -9,7 +9,11 @@
                 margin: 0;
                 list-style: none;
                 text-decoration: none;
+                
             }
+
+
+
 
             body{
                 background-color: rgb(209, 209, 209);
@@ -124,20 +128,18 @@
             }
 
             .input {
-                display: flex;
-                margin: auto;
-                padding-left: 5px;
                 background-color: rgb(255, 255, 255);
                 width: 100%;
                 height: 35px;
                 border: 1px solid grey;
-                border-radius: 10px;
+                border-radius: 10px 0 0 10px;
                 font-family: arial;
                 font-size: 17px;
                 color: rgb(71, 71, 71);
                 outline-width: 0px;
                 padding-left: 10px;
-
+                margin-left: -5px;
+                line-height: 35px;
             }
 
             .input:hover {
@@ -149,12 +151,40 @@
             }
 
             .searchbox {
-                width:55%;
+                width:60%;
                 margin: auto;
+             
                position:sticky; 
-               top:50px;
+               top:55px;
                z-index: 300;
+               display: flex;
             }
+
+            .searchbutton button{
+                display:flex;
+                justify-content: center;
+                margin: auto;
+                width: 100px;
+                height: 37px;
+                background-color: rgb(108, 140, 245); 
+               /* background-color: rgb(255, 255, 255); */
+                outline-width: 0px;
+                border: 1px solid  rgb(95, 123, 214);
+                border-left: 0px;
+                border-radius: 0 10px 10px 0;
+
+            }
+
+            .searchbutton button img {
+                width: 22px;
+            }
+
+            .searchbutton button:hover {
+                box-shadow: 0 0 5px green;
+            }
+
+
+
             /*SEARCH BAR*/
 
             /*TOPOFFER*/
@@ -313,12 +343,18 @@
                 </div>
                 <!--HEADER-->
                 <!--FINDER-->
-                <div>
-                    <img src="/images/LOGO.png" class="searchimage">
-                </div>
-                <div class="searchbox">
-                    <input type="text" placeholder="Search for the best place to rest..." class="input"> 
-                </div>
+                    <div>
+                        <img src="/images/LOGO.png" class="searchimage">
+                    </div>
+                    <div class="searchbox">
+                        <input type="text" placeholder="Search for the best place to rest..." class="input"> 
+                        <div class="searchbutton">
+                            <button> 
+                                <img src="/images/search.png"> 
+                            </button>
+                        </div>
+                    </div>
+
                 <!--FINDER-->
                 <!--TOPOFFER-->
                 <div class="topoffer">
