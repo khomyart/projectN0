@@ -22,7 +22,6 @@
                 justify-content: center;
             }
             .parent {
-               
                 width: 1000px;
                 flex-direction: column;
                 display: flex;
@@ -30,13 +29,9 @@
             .child {
                 margin-top: 30px;
                 align-self: center;
-                border: 3px solid green;
                 display: flex;
                 flex-direction: column;
-            }
-            .positions {
-                border: 3px solid red;
-                padding: 0px;
+                width:80%;
             }
             /*header*/
             .header{
@@ -109,6 +104,62 @@
             }
             /*SEARCH BAR*/
 
+            /*POSITIONS*/
+            .positions {
+                background-color: white;
+                height: 200px;
+                margin-bottom: 10px;
+            }
+
+
+            .positions .pimage img {
+
+                float: left;
+                width: 240px;
+                height: 200px;
+                border-radius: 5%;
+            }
+
+            .ptext {
+                height: 155px;
+                padding: 0 0 10px 20px;
+                margin-left: 240px;
+                box-sizing: border-box;
+                font-size: 90%;
+                overflow:auto;
+            }
+            
+            .pbutton {
+               display:flex;
+               justify-content: center;
+            }
+
+            .btn {
+                background-color: rgb(175, 175, 175);
+                height: 40px;
+                width: 140px;
+                border-radius: 5px;
+                outline-width: 0px;
+                font-family: Raleway;
+                font-size: 15px;
+                font-weight: bolder;
+                color: rgb(255, 255, 255);
+            }
+
+            .btn-success {
+                background-color: rgb(108, 140, 245);
+                border: 1px solid rgb(95, 123, 214);
+            }
+
+            .btn-success:hover {
+                font-size: 20px;
+            }
+
+            .btn-success:active, .btn-success.active {
+                font-size: 15px;
+            }
+            /*POSITIONS*/
+
         </style>
     </head>
     <body>
@@ -136,14 +187,62 @@
                 <!--MAIN PART-->
                 <div class="child">
                     <div class="positions">
-                        <H1>block 1</H1>
+                        <div class="pimage"><!--зображення кімнати-->
+                            <img src="/aparts/apart2_c.jpg">
+                        </div>
+                        <div class="ptext">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In hac habitasse platea dictumst quisque sagittis. Tempor orci dapibus ultrices in. Sapien faucibus et molestie ac feugiat sed lectus vestibulum. Nulla malesuada pellentesque elit eget. Dui faucibus in ornare quam viverra orci sagittis eu volutpat. Eu mi bibendum neque egestas congue. Donec enim diam vulputate ut pharetra sit. Fermentum iaculis eu non diam phasellus vestibulum. Massa sed elementum tempus egestas sed. Fusce ut placerat orci nulla pellentesque dignissim enim. Sagittis eu volutpat odio facilisis mauris sit amet. Eget nullam non nisi est sit amet. Accumsan sit amet nulla facilisi morbi.</br>
+                        </div>
+                        <div class="pbutton">
+                            <button class="btn btn-success">Book it!</button>
+                        </div>
+                        <!--<div class="prating">
+
+                        </div>-->
                     </div>
                     <div class="positions">
-                        <H1>block 2</H1>
-                    </div>
-                    <div class="positions">
-                        <H1>block 3</H1>
-                    </div>
+                            <div class="pimage"><!--зображення кімнати-->
+                                <img src="/aparts/apart2_c.jpg">
+                            </div>
+                            <div class="ptext">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In hac habitasse platea dictumst quisque sagittis. Tempor orci dapibus ultrices in. Sapien faucibus et molestie ac feugiat sed lectus vestibulum. Nulla malesuada pellentesque elit eget. Dui faucibus in ornare quam viverra orci sagittis eu volutpat. Eu mi bibendum neque egestas congue. Donec enim diam vulputate ut pharetra sit. Fermentum iaculis eu non diam phasellus vestibulum. Massa sed elementum tempus egestas sed. Fusce ut placerat orci nulla pellentesque dignissim enim. Sagittis eu volutpat odio facilisis mauris sit amet. Eget nullam non nisi est sit amet. Accumsan sit amet nulla facilisi morbi.</br>
+                            </div>
+                            <div class="pbutton">
+                                <button class="btn btn-success">Book it!</button>
+                            </div>
+                            <!--<div class="prating">
+    
+                            </div>-->
+                        </div>
+                        <div class="positions">
+                                <div class="pimage"><!--зображення кімнати-->
+                                    <img src="/aparts/apart2_c.jpg">
+                                </div>
+                                <div class="ptext">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In hac habitasse platea dictumst quisque sagittis. Tempor orci dapibus ultrices in. Sapien faucibus et molestie ac feugiat sed lectus vestibulum. Nulla malesuada pellentesque elit eget. Dui faucibus in ornare quam viverra orci sagittis eu volutpat. Eu mi bibendum neque egestas congue. Donec enim diam vulputate ut pharetra sit. Fermentum iaculis eu non diam phasellus vestibulum. Massa sed elementum tempus egestas sed. Fusce ut placerat orci nulla pellentesque dignissim enim. Sagittis eu volutpat odio facilisis mauris sit amet. Eget nullam non nisi est sit amet. Accumsan sit amet nulla facilisi morbi.</br>
+                                </div>
+                                <div class="pbutton">
+                                    <button class="btn btn-success">Book it!</button>
+                                </div>
+                                <!--<div class="prating">
+        
+                                </div>-->
+                            </div>
+                            <div class="positions">
+                                    <div class="pimage"><!--зображення кімнати-->
+                                        <img src="/aparts/apart2_c.jpg">
+                                    </div>
+                                    <div class="ptext">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In hac habitasse platea dictumst quisque sagittis. Tempor orci dapibus ultrices in. Sapien faucibus et molestie ac feugiat sed lectus vestibulum. Nulla malesuada pellentesque elit eget. Dui faucibus in ornare quam viverra orci sagittis eu volutpat. Eu mi bibendum neque egestas congue. Donec enim diam vulputate ut pharetra sit. Fermentum iaculis eu non diam phasellus vestibulum. Massa sed elementum tempus egestas sed. Fusce ut placerat orci nulla pellentesque dignissim enim. Sagittis eu volutpat odio facilisis mauris sit amet. Eget nullam non nisi est sit amet. Accumsan sit amet nulla facilisi morbi.</br>
+                                    </div>
+                                    <div class="pbutton">
+                                        <button class="btn btn-success">Book it!</button>
+                                    </div>
+                                    <!--<div class="prating">
+            
+                                    </div>-->
+                                </div>                            
+                    
                 </div>
                 <!--MAIN PART-->
             </div>
