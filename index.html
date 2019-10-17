@@ -51,22 +51,57 @@
                 padding: 0 10px;
                 font-family: Raleway;
                 font-size: 17px;
-            }
-            .logo{
-                text-align: center;
-                width: 180px;
-                line-height: 40px;
-            }
-            .selection li{
-                float: left; /*вирівняти список*/
-                height: 40px;
-                line-height: 40px;
-                text-align: center;
-                width: 150px;
+                z-index: 200;
             }
 
-            .selection li:hover{
+            .logo{
+                margin-left:50px;
+            }
+            .logo a{
+                text-align: center;
+                width: 150px;
+                height: 45px;
+                line-height: 45px;
+
+                display: block;
+                color: white;
+                font-size: 20px;
+               
+            }
+
+            .logo a:hover {
+                color: rgb(0, 0, 0);
+                background-color: rgb(209, 209, 209);
+                border-radius: 10px 10px 0 0;
+                text-decoration: none;
+            }
+
+            .logo a:active {
+                text-decoration: none;
                 color: black;
+                font-size: 25px;
+            }
+
+
+            .selection li{
+                float: left; /*вирівняти список*/
+                height: 45px;
+                line-height: 45px;
+                text-align: center;
+                margin: 0 16px;
+                
+            }
+
+            .selection li a {
+                width: 150px;
+                display: block;
+                text-decoration: none; 
+                color:rgb(255, 255, 255);
+                
+            }
+
+            .selection li a:hover{
+                color: rgb(0, 0, 0);
                 background-color: rgb(209, 209, 209);
                 border-radius: 10px 10px 0 0;
                
@@ -75,6 +110,8 @@
             .selection li:active{
                 background-color:rgb(209, 209, 209);
                 font-size: 21px;
+                color: black;
+                border-radius: 10px 10px 0 0;
             }
             /*header*/
 
@@ -90,7 +127,7 @@
                 display: flex;
                 margin: auto;
                 padding-left: 5px;
-                background-color: white;
+                background-color: rgb(255, 255, 255);
                 width: 100%;
                 height: 35px;
                 border: 1px solid grey;
@@ -116,6 +153,7 @@
                 margin: auto;
                position:sticky; 
                top:50px;
+               z-index: 300;
             }
             /*SEARCH BAR*/
 
@@ -158,7 +196,7 @@
             }
 
             .pimage img:hover {
-                transform: scale(1.11);
+                transform: scale(1.05);
             }
 
             .positioncontainer {
@@ -238,7 +276,7 @@
             .pageholder a {
                 color: black;
                 font-family: raleway;
-                font-size: 25px;
+                font-size: 20px;
                 transition: background-color .3s;
                 padding: 10px 20px;
             }
@@ -263,13 +301,13 @@
                 <!--HEADER-->
                 <div class="header">
                     <div class="logo">
-                        <a>MAIN<b>MENU</b></a>
+                        <a href="#">Travel<b>LIST</b></a>
                     </div>
                     <div class="selection">
                         <ul>
-                            <li><a>Home</a></li>
-                            <li><a>Contacts</a></li>
-                            <li><a>About</a></li>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Contacts</a></li>
+                            <li><a href="#">About</a></li>
                         </ul>
                     </div>
                 </div>
