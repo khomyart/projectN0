@@ -1,0 +1,307 @@
+*{
+    padding: 0px;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: rgb(209, 209, 209);
+}
+
+.grandparent {
+    padding: 0px;
+    display:flex;
+    width: auto;
+    height: auto;
+    justify-content: center;
+}
+
+.parent {
+    width: 1200px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-content:center;
+}
+
+.child {
+    margin-top: 30px;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    width:85%;
+}
+
+/*header*/
+.header {
+    position:sticky; 
+    top:0px;
+    color:white;
+    background-color: rgba(0, 0, 0, 0.534);
+    border-radius: 0 0 10px 10px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 10px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 17px;
+    z-index: 200;
+}
+
+.logo {
+    margin-left:50px;
+}
+
+.logo a {
+    text-align: center;
+    width: 150px;
+    height: 45px;
+    line-height: 45px;
+    display: block;
+    color: white;
+    font-size: 22px;
+}
+
+.logo a:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgb(209, 209, 209);
+    border-radius: 10px 10px 0 0;
+    text-decoration: none;
+}
+
+.logo a:active {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+
+.selection li {
+    float: left; /*вирівняти список*/
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    margin: 0 16px;
+    font-size: 22px;  
+}
+
+.selection li a {
+    width: 150px;
+    display: block;
+    text-decoration: none; 
+    color:rgb(255, 255, 255);
+}
+
+.selection li a:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgb(209, 209, 209);
+    border-radius: 10px 10px 0 0;
+}
+
+.selection li:active {
+    background-color:rgb(209, 209, 209);
+    font-size: 18px;
+    color: black;
+    border-radius: 10px 10px 0 0;
+}
+/*header*/
+
+/*SEARCH BAR*/
+.searchimage {
+    display: flex;
+    margin: 13px auto 0 ;
+    width: 500px;
+    height: auto;
+}
+
+.input {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 45px;
+    border: 1px solid grey;
+    border-radius: 10px 0 0 10px;
+    font-family: arial;
+    font-size: 22px;
+    color: rgb(71, 71, 71);
+    outline-width: 0px;
+    padding-left: 10px;
+    margin-left: -5px;
+    line-height: 45px;
+}
+
+.input:hover {
+    box-shadow: 0 0 5px grey;
+}
+
+.input:active, .input.active {
+    box-shadow: 0 0 10px grey;
+}
+
+.searchbox {
+    width:60%;
+    margin: auto;
+    position:sticky; 
+    top:55px;
+    z-index: 300;
+    display: flex;
+}
+
+.searchbutton button {
+    display:flex;
+    justify-content: center;
+    margin: auto;
+    width: 100px;
+    height: 47px;
+    background-color: rgb(108, 140, 245); 
+    /* background-color: rgb(255, 255, 255); */
+    outline-width: 0px;
+    border: 1px solid  rgb(95, 123, 214);
+    border-left: 0px;
+    border-radius: 0 10px 10px 0;
+}
+
+.searchbutton button img {
+    width: 22px;
+    height: 22px;
+}
+
+.searchbutton button:hover {
+    box-shadow: 0 0 5px green;
+}
+/*SEARCH BAR*/
+
+/*TOPOFFER*/
+.topoffer {
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    line-height: 80px;
+    font-size: 50px;
+    font-family: Raleway;
+    margin-top: 30px;
+    margin-bottom: -25px;
+}
+
+.topoffer p {
+    font-size: 25px;
+}
+/*TOPOFFER*/
+
+/*position*/
+.position {
+    background-color: rgba(255, 255, 255, 0.822);
+    border-radius: 12px;
+    padding: 10px;
+    height: 200px;
+    margin-bottom: 30px;
+    display:flex;
+    flex-direction: row;
+}
+
+.pimage img {
+    width: 240px;
+    height: 200px;
+    border-radius: 5%;
+    transition:all 0.25s ease;
+}
+
+.pimage img:hover {
+    transform: scale(1.05);
+}
+
+.positioncontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    width: 100%;
+
+}
+
+.pheader {
+    padding: 0 0 1px 20px;
+    box-sizing: border-box;
+    font-size: 150%;
+    font-family: 'Nunito Sans', sans-serif;
+
+}
+
+.ptext {
+    padding: 0 0 10px 20px;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 110%;
+    overflow:auto;
+    margin-bottom: 10px;
+
+}
+
+.pbutton {
+    position: relative;
+    display:flex;
+    justify-content: flex-end;
+    margin: 0 8px 5px 0;
+}
+
+.btn {
+    background-color: rgb(175, 175, 175);
+    height: 40px;
+    width: 140px;
+    border-radius: 5px;
+    outline-width: 0px;
+    font-family: Raleway;
+    font-size: 15px;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+}
+
+.btn-success {
+    background-color: rgb(108, 140, 245);
+    border: 1px solid rgb(95, 123, 214);
+}
+
+.btn-success:hover {
+    box-shadow: 0 0 5px green;
+}
+
+.btn-success:active {
+    font-size: 13px;
+}
+/*position*/
+
+/*footer*/
+.footer {
+    height: 100px;
+    width: 100%;
+    margin: auto;
+    margin-top:20px;
+}
+
+.pageholder {
+    height: 50px;
+    width: 45%;
+    border-radius: 6px;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+.pageholder a {
+    color: black;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 20px;
+    transition: background-color .3s;
+    padding: 10px 20px;
+}
+
+.pageholder a.active {
+    border-radius:3px;
+    background-color: rgba(0, 0, 0, 0.329);
+    color: white;
+}
+
+.pageholder a:hover:not(.active) {
+    border-radius:3px;
+    background-color: #ddd;
+}
+/*footer*/
