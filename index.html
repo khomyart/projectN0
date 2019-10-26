@@ -1,200 +1,21 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>TravelLIST!</title>
-        <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet"> <!--font-family: 'Nunito Sans', sans-serif;-->
-        <link href="/css/style.css" rel="stylesheet">
-        <meta charset="UTF-8">
-    </head>
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <body>
-        <div class="grandparent"> <!--полотно-->
-            <div class="parent"> <!--головний контейнер-->
-                <!--HEADER-->
-                <div class="header"> <!--верхнє меню-->
-                    <div class="logo"> <!--лівий напис-->
-                        <a href="#">Travel<b>LIST</b></a>
-                    </div>
-                    <div class="selection"> <!--список зправа-->
-                        <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Contacts</a></li>
-                            <li><a href="#">About</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <!--HEADER-->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-                <!--FINDER-->
-                    <div>
-                        <img src="/images/logo.png" class="searchimage"> <!--зображення над строкою пошуку-->
-                    </div>
-                    <div class="searchbox"> <!--поле для пошуку + кнопка-->
-                        <input type="text" placeholder="Search for the best place to rest..." class="input"> 
-                        <div class="searchbutton">
-                            <button> 
-                                <img src="/images/search.png"> 
-                            </button>
-                        </div>
-                    </div>
-                <!--FINDER-->
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <h1>Hello, world!</h1>
 
-                <!--TOPOFFER--> 
-                <div class="topoffer"> <!--напис між полем пошуку та пропозиціями-->
-                    <H1>OR</H1>
-                    <p>select something from our best offers!</p>
-                </div>
-                <!--TOPOFFER-->
-
-                <!--MAIN PART-->
-                <div class="child"> <!--загальний контейнер для усіх пропозицій-->
-                    <div class="position"> <!--блок = 1 пропозиція-->
-                        <div class="pimage"> <!--зображення кімнати-->
-                            <img src="/aparts/apart2_c.jpg">
-                        </div>
-                        <div class="positioncontainer"> <!--структурний блок для зберігання тексту опису пропозиції та кнопок-->
-                            <div class="pheader"> <!--заголовок-->
-                                Incredible place #345
-                            </div>
-                            <div class="ptext"> <!--текст опису пропозиції-->
-                                Just a couple of words about this incredible place #345. Here we have a room and some things in it.</br>
-                            </div>
-                            <div class="pbutton"> <!--кнопка замовлення пропозиції-->
-                                <button class="btn btn-success">Book it!</button>
-                            </div>
-                        </div>
-                        <!--<div class="prating"> 
-                        </div>--> <!--рейтинг пропозиції-->
-                    </div>
-                    <div class="position">
-                        <div class="pimage"><!--зображення кімнати-->
-                            <img src="/aparts/apart3_c.jpg">
-                        </div>
-                        <div class="positioncontainer">
-                            <div class="pheader">
-                                Incredible place #384
-                            </div>
-                            <div class="ptext">
-                                Here we have another #incredible room just for 900009$ hrn per hour. Nothing specific: some lights swinging on the ceiling, sofa on da floor, etc.</br>
-                            </div>
-                            <div class="pbutton">
-                                <button class="btn btn-success">Book it!</button>
-                            </div>
-                        </div>
-                        <!--<div class="prating">
-                        </div>-->
-                    </div>
-                    <div class="position">
-                        <div class="pimage"><!--зображення кімнати-->
-                            <img src="/aparts/apart4_c.jpg">
-                        </div>
-                        <div class="positioncontainer">
-                            <div class="pheader">
-                                Incredible place #697
-                            </div>
-                            <div class="ptext">
-                                Special offere #697 grands you incredible pleasure if u decide to stay there. Premium class house was made just for you and for making you feel better after hard all-day work. Take a sit, turn on TV and get some rest with your new house-friend... ;)))</br>
-                            </div>
-                            <div class="pbutton">
-                                <button class="btn btn-success">Book it!</button>
-                            </div>
-                        </div>
-                        <!--<div class="prating">
-                        </div>-->
-                    </div>
-                    <div class="position">
-                        <div class="pimage"><!--зображення кімнати-->
-                            <img src="/aparts/apart2_c.jpg">
-                        </div>
-                        <div class="positioncontainer">
-                            <div class="pheader">
-                                Incredible place #345
-                            </div>
-                            <div class="ptext">
-                                Some desctiptiom here. Maybe a little bit weird to see it here but there is no shame in it i belive...</br>
-                            </div>
-                            <div class="pbutton">
-                                <button class="btn btn-success">Book it!</button>
-                            </div>
-                        </div>
-                        <!--<div class="prating">
-                        </div>-->
-                    </div>
-                    <div class="position">
-                        <div class="pimage"><!--зображення кімнати-->
-                            <img src="/aparts/apart2_c.jpg">
-                        </div>
-                        <div class="positioncontainer">
-                            <div class="pheader">
-                                Incredible place #345
-                            </div>
-                            <div class="ptext">
-                                Some desctiptiom here. Maybe a little bit weird to see it here but there is no shame in it i belive...</br>
-                            </div>
-                            <div class="pbutton">
-                                <button class="btn btn-success">Book it!</button>
-                            </div>
-                        </div>
-                        <!--<div class="prating">
-                        </div>-->
-                    </div>
-                    <div class="position">
-                        <div class="pimage"><!--зображення кімнати-->
-                            <img src="/aparts/apart2_c.jpg">
-                        </div>
-                        <div class="positioncontainer">
-                            <div class="pheader">
-                                Incredible place #345
-                            </div>
-                            <div class="ptext">
-                                Some desctiptiom here. Maybe a little bit weird to see it here but there is no shame in it i belive...</br>
-                            </div>
-                            <div class="pbutton">
-                                <button class="btn btn-success">Book it!</button>
-                            </div>
-                        </div>
-                        <!--<div class="prating">
-                        </div>-->
-                    </div>
-                    <div class="position">
-                        <div class="pimage"><!--зображення кімнати-->
-                            <img src="/aparts/apart2_c.jpg">
-                        </div>
-                        <div class="positioncontainer">
-                            <div class="pheader">
-                                Incredible place #345
-                            </div>
-                            <div class="ptext">
-                                Some desctiptiom here. Maybe a little bit weird to see it here but there is no shame in it i belive...</br>
-                            </div>
-                            <div class="pbutton">
-                                <button class="btn btn-success">Book it!</button>
-                            </div>
-                        </div>
-                        <!--<div class="prating">
-                        </div>-->
-                    </div>
-                </div>
-                <!--MAIN PART-->
-
-                <!--FOOTER-->
-                <div class="footer">
-                   <div class="pageholder">
-                        <a href="#" >&laquo;</a>
-                        <a href="#"class="active">1</a>
-                        <a href="#">2</a>
-                        <a href="#">3</a>
-                        <a href="#">4</a>
-                        <a href="#">5</a>
-                        <a href="#">6</a>
-                        <a href="#">&raquo;</a>
-                   </div>
-                </div>
-                <!--FOOTER-->
-                
-            </div>
-        </div>
-    </body>
-
-</html>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
